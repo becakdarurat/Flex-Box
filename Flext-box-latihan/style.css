@@ -1,0 +1,51 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial;
+    background-color: #ddd;
+    line-height: 1.65;
+    padding-bottom: 100px;
+}
+.container-satu {
+    width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+}
+.kolom-utama {
+    flex: 3;
+    order: 3;
+}
+.sidebar-satu {
+    flex: 1;
+    order: 2;
+}
+.sidebar-dua {
+    flex:1;
+    order: 1;
+}
+
+/* Latihan 2 */
+.container-dua {
+    width: 800px;
+    margin: 50px auto;
+    display: flex;
+}
+.layanan {
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.layanan-satu {
+    background-color:rgb(98, 98, 252);
+}
+.layanan-dua {
+    background-color: rgb(98, 253, 98);
+}
+.layanan-tiga {
+    background-color: rgb(249, 112, 112);
+}
