@@ -31,14 +31,14 @@ body {
 
 /* Latihan 2 */
 .container-dua {
-    width: 800px;
+    /* maximal width membuat lebar maximal 800px, bila ukuran layar di kecilkan maka lebar juga akan ikut mengecil */
+    max-width: 800px;
     margin: 50px auto;
-    display: flex;
 }
 .layanan {
-    width: 30%;
     padding: 20px;
     box-sizing: border-box;
+    margin-bottom: 20px;
 }
 .layanan-satu {
     background-color:rgb(98, 98, 252);
@@ -48,4 +48,18 @@ body {
 }
 .layanan-tiga {
     background-color: rgb(249, 112, 112);
+}
+
+/* Responsive */
+@media( min-width: 600px ){
+    /* cara bacanya, pada saat lebar layar 600px / minimal lebar 600 maka pake CSS berikut */
+    .container-dua {
+        display: flex;
+        justify-content: space-between;
+        /* kita berikut flex pada saat lebar layar 600px */
+    }
+    .layanan {
+        /* kita berikan lebar 30% pada saat lebar layar 600px */
+        width: 30%;
+    }
 }
