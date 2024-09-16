@@ -3,7 +3,7 @@ html, body {
     padding: 0;
 }
 body {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     background-color: #ddd;
     line-height: 1.65;
     padding-bottom: 100px;
@@ -50,6 +50,58 @@ body {
     background-color: rgb(249, 112, 112);
 }
 
+/* Latihan 3 */
+.container-tiga {
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.thumbnail {
+    width: 50%;
+}
+.container-tiga img {
+    width: 100%;
+    height: 350px;
+}
+
+/* Latihan 4 */
+.container-empat {
+    max-width: 800px;
+    margin: 50px auto;
+}
+.card {
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    background-color: #eee;
+    overflow: hidden;
+    text-align: center;
+    margin: 10px;
+    width: calc(100vw - 20px);
+}
+.card header {
+    width: calc(100vw - 20px);
+    height: 150px;
+    background-color: #666;
+}
+
+/* Latihan 5 */
+.container-lima {
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    border: 5px solid black;
+    display: flex;
+}
+.kotak {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    color: white;
+    margin: auto;
+}
+
 /* Responsive */
 @media( min-width: 600px ){
     /* cara bacanya, pada saat lebar layar 600px / minimal lebar 600 maka pake CSS berikut */
@@ -62,4 +114,20 @@ body {
         /* kita berikan lebar 30% pada saat lebar layar 600px */
         width: 30%;
     }
+    .thumbnail {
+        width: 25%;
+    }
+    .container-tiga img {
+        height: 150px;
+    }
+    .container-empat {
+        display: flex;
+    }
+    .card.besar {
+        transform: scale(1.12);
+    }
+    .card {
+        flex: 1;
+    }
+
 }
